@@ -1,0 +1,28 @@
+<h3>Contenedor de monitorización ModBus con publicador MQTT y registro de datos.</h3>
+Este contenedor incluye software de terceros entre los cuales se encuentran:
+<ul>
+<li>Librería ModBus (<a href="http://www.libmodbus.org/">libmodbus</a>)</li>
+<li>Publicador MQTT (<a href="http://www.mosquitto.org/">Mosquitto</a>)</li>
+</ul>
+<ul>
+<li>Este programa registra periodicamente 1 registro de ModBus para posteriormente</li>
+<li>enviar el valor del registro a un tema en un broker MQTT y al mismo tiempo guardar</li>
+<li>un reporte llamado "Reporte de "FECHA_DEL_DÍA".txt, el cual puede ser descargado (<a href="http://www.libmodbus.org/">aquí</a>)</li>
+<li>El esquema de funcionamiento es el siguiente:</li>
+</ul><br>
+<div style="border: 3px black solid;padding: 10px;width: 100px;height: 70px;margin-right:30;float: left;text-align: center;line-height: 20px;">Dispositivo<br>ModBus</div>
+<div style="font-size: 30px;float: left;vertical-align: center;font-weight: bold;line-height: 75px;">&rarr;</div>
+<div style="color: #00a5db; border:3px #00a5db solid;padding: 10px;width: 100px;height: 70px;margin-left: 30px;margin-right: 30px;float: left;text-align: center;line-height: 20px;">Programa en SmartBox</div>
+<div style="font-size:30px;float: left;vertical-align: center;font-weight: bold;line-height: 75px;">&rarr;</div>
+<div style="border: 3px black solid;padding: 10px;width:100px;height: 70px;margin-left: 30px;margin-right: 30px;float: left;text-align: center;line-height: 20px;">Publicador<br>MQTT</div>
+<div style="font-size: 30px;float: left;vertical-align: center;font-weight: bold;line-height: 75px;">&rarr;</div>
+<div style="border: 3px black solid;padding: 10px;width:100px;height: 70px;margin-left: 30px;float: left;text-align: center;line-height: 20px;">Subscriptor<br>MQTT</div>
+<br><br><br><br><br><br><br><br>
+<p>Aplicación diseñada por SE3 basado en contenedor de INSYS.<br>Para poder funcionar se necesita:</p>
+<ul>
+<li>Conexión a Internet</li>
+<li>Dispositivo conectado al puerto ModBus</li>
+</ul>
+</li>
+</ul>
+</p>
